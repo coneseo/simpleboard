@@ -28,10 +28,6 @@
             <input type="comment" class="form-control" id="userId" placeholder="Enter writer" name="nickname">
         </div>
         <input type="hidden" name="userId" value="${sessionScope.user.id}">
-        <%--<div class="form-group">--%>
-            <%--<label for="pwd">Password:</label>--%>
-            <%--<input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pwd">--%>
-        <%--</div>--%>
 
         <button type="submit" class="btn btn-success">Submit</button>
     </form>
