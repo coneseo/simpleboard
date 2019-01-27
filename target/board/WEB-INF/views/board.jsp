@@ -47,12 +47,11 @@
             </tbody>
         </table>
     </div>
+    <h1>${requestScope.lastNum}</h1>
     <ul class="pagination">
-        <li><a href="/board?page=1">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
+        <c:forEach begin="1" end="${requestScope.lastNum}">
+            <li><a href="/board?page=1">1</a></li>
+        </c:forEach>
     </ul>
 </div>
 </body>

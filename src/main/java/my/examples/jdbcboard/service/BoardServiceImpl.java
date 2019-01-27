@@ -1,5 +1,7 @@
 package my.examples.jdbcboard.service;
 
+import my.examples.jdbcboard.dao.PageDao;
+import my.examples.jdbcboard.dao.PageDaoImpl;
 import my.examples.jdbcboard.dto.BoardVO;
 import my.examples.jdbcboard.dao.BoardDao;
 import my.examples.jdbcboard.dao.BoardDaoImpl;
