@@ -17,7 +17,7 @@
 
     <form action="/modify" method = "post">
         <%--hidden! id를 숨기는 것--%>
-        <input type="input" class="form-control" id="id" name="id" value="${board.id}">
+        <input type="hidden" class="form-control" id="id" name="id" value="${board.id}">
 
         <div class="form-group">
             <label for="comment">Title:</label>
@@ -29,7 +29,7 @@
         </div>
         <div class="form-group">
             <label for="comment">nickname:</label>
-            <input type="comment" class="form-control" id="writer" placeholder="Enter userId" name="nickname"value="${board.nickname}">
+            <label>${sessionScope.user.nickname}</label>
         </div>
 
 

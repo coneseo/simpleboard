@@ -25,9 +25,8 @@
         </div>
         <div class="form-group">
             <label for="comment">nickname:</label>
-            <input type="comment" class="form-control" id="userId" placeholder="Enter writer" name="nickname">
+            <label>${sessionScope.user.nickname}</label>
         </div>
-        <input type="hidden" name="userId" value="${sessionScope.user.id}">
 
         <button type="submit" class="btn btn-success">Submit</button>
     </form>
