@@ -49,8 +49,8 @@
     </div>
     <h1>${requestScope.lastNum}</h1>
     <ul class="pagination">
-        <c:forEach begin="1" end="${requestScope.lastNum}">
-            <li><a href="/board?page=1">1</a></li>
+        <c:forEach var="i" begin="1" end="${requestScope.lastNum}">
+            <li><a href="/board?page=${i}">${i}</a></li>
         </c:forEach>
     </ul>
 </div>

@@ -29,7 +29,7 @@
         </div>
         <div class="form-group">
             <label for="comment">nickname:</label>
-            <input type="comment" class="form-control" id="writer" placeholder="Enter userId" name="nickname"value="${sessionScope.user.nickname}">
+            <label>${sessionScope.user.nickname}</label>
         </div>
 
         <button type="submit" class="btn btn-success">rewrite</button>
